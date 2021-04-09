@@ -1,10 +1,21 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
-
-module.exports = {
-  /* Your site config here */
-  plugins: [],
-}
+// module.exports = {
+//   siteMetadata: {
+//     title: `Gatsby Default Starter`,
+//     description: `Project-12e: Virtual Lolly `,
+//     author: `@Ashraf`,
+//   },
+//   plugins: [
+//     {      
+//       resolve: "gatsby-source-graphql",
+//       options: {
+//         // Arbitrary name for the remote schema Query type
+//         typeName: "lolly",
+//         // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
+//         fieldName: "Lollies",
+//         // Url to query from
+//          url: `https://new-lolly-ashraf.netlify.app/.netlify/functions/vCard`,
+//         // url: `http://localhost:8888/.netlify/functions/vLolly`,
+//       },
+//     }
+//   ]
+// }
