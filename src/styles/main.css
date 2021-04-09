@@ -1,11 +1,32 @@
-body {
-    text-align: center;
-}
 .container {
     width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    box-shadow: 0 0 20px #8f7070;
+    padding: 20px;
+    margin-top: 35px; 
+    text-align: center;
+    background-color: #1b0b57;
+    color: white;
 }
+.main-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container > * {
+    margin: 10px 0;
+    padding: 8px 10px;
+}
+
+.form-container > textarea {
+    height: 250px;
+}
+
 .listLollies {
     display: flex;
     flex-direction: row;
@@ -13,14 +34,7 @@ body {
 }
 
 .listLollies .lollipop, .lollyFormDiv .lollipop {
-    height: 300px;
-}
- 
-.lollyFormDiv {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    height: 400px;
 }
 
 .lollyFlavourDiv {
@@ -44,10 +58,9 @@ body {
     margin-top: -10px;
     margin-left: -10px;
 }
-
-.lollyFrom {
+.lollyFormDiv {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
