@@ -1,9 +1,9 @@
-const { ApolloServer, gql } = require("apollo-server-lambda")
-const faunadb = require("faunadb")
-const axios = require("axios")
-q = faunadb.query
-require("dotenv").config()
-const shortid = require("shortid")
+const { ApolloServer, gql } = require("apollo-server-lambda");
+const faunadb = require("faunadb");
+const axios = require("axios");
+q = faunadb.query;
+require("dotenv").config();
+const shortid = require("shortid");
 
 const typeDefs = gql`
   type Query {
@@ -76,9 +76,7 @@ const resolvers = {
   Mutation: {
     addVCard: async (_, { c1, c2, c3, rec, msg, sender }) => {
       try {
-        var client = new faunadb.Client({
-          secret: process.env.FAUNADB_SERVER_SECRET,
-        })
+        var client = new faunadb.Client({secret: process.env.FAUNADB_SERVER_SECRET })
         console.log("============================")
         console.log(c1, c2, c3, rec, msg, sender)
         console.log("============================")
