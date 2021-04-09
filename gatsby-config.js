@@ -13,7 +13,7 @@
 //         // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
 //         fieldName: "Lollies",
 //         // Url to query from
-//          url: `https://new-lolly-ashraf.netlify.app/.netlify/functions/vCard`,
+//          url: `https://project12e-lolly-ashraf.netlify.app/.netlify/functions/vCard`,
 //         // url: `http://localhost:8888/.netlify/functions/vLolly`,
 //       },
 //     }
